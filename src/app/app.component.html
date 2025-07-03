@@ -12,13 +12,10 @@
 
       @for (task of tasks; track task.id) {
         <ul>
-          <li>{{}}</li>
-          <li></li>
-          <li></li>
+          <li>{{task.id}}</li>
+          <li>{{task.name}}</li>
+          <li><button (click)="removeTask(task.id)">Delete</button></li>
         </ul>
-
-
-        <p>{{ user.name }}</p>
       }
 
   </div>
